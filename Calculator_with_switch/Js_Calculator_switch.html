@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    
+
+
+    <script>
+         
+            //// first method
+
+
+         function Calculator2 () {
+
+            let number1 = +prompt("Enter first number");
+            let number2 = +prompt("Enter second number");
+            let operation= prompt("Please enter a mathematical operation +, -, *, /, **");
+
+
+            switch (operation) {
+             case "+":
+                 document.write(number1 + number2);
+                 break;
+
+             case "-":
+                 document.write(number1 - number2);
+                 break;
+
+             case "*":
+                 document.write(number1 * number2);
+                 break;
+
+             case "/":
+                 document.write(number1 / number2);
+                 break;
+
+             case "**":
+                document.write(number1 ** number2);
+                 break;
+        
+             default:
+                 document.write("You have entered invalid operation !!!");
+                 break;
+         }
+         }
+
+         Calculator2();
+
+
+
+
+
+
+         
+
+
+
+
+
+
+
+
+
+        ////////////////////////////////
+
+        // Second Method for Calculator 
+
+
+
+        
+
+          /// bos variable degisken {} ile tanimlanmali
+
+        
+
+    //     function Calculator () {  
+
+    //         let number1 = +prompt("Enter first number");
+    //         let number2 = +prompt("Enter second number");
+    //         let operation= prompt("Please enter a mathematical operation +, -, *, /, **");
+
+    //         let result = {};
+
+    //     switch (operation) {
+    //         case "+":
+    //             result = (number1 + number2);
+    //             break;
+
+    //         case "-":
+    //             result = (number1 - number2);
+    //             break;
+
+    //         case "*":
+    //             result = (number1 * number2);
+    //             break;
+
+    //         case "/":
+    //             result = (number1 / number2);
+    //             break;
+
+    //         case "**":
+    //             result = (number1 ** number2);
+    //             break;
+        
+    //         default:
+    //             result = ("You have entered invalid operation !!!")
+    //             break;
+    //     }
+    //     return result ;
+    // }
+
+
+        
+        document.write(Calculator());
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
