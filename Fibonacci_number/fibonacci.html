@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      ///  1. method: without function:
+
+      // let user = +prompt("Enter a number for fibonacci: ");
+      // // console.log(typeof(user), user);
+      // let empty = [];
+
+      //         if (user <= 0) {
+      //         console.log("please enter a number more than Zero");
+      //     }   else if (user == 1) {
+      //         console.log(`result = 1`);
+
+      //     }   else if (user == 2 ) {
+      //         console.log(`result = 2`);
+
+      //     }   else if (user > 2) {
+
+      //         for (i = 0; i <= user; i++) {
+      //             if ( i == 1) {
+      //                 empty.push(i);
+
+      //             } else if (i == 2) {
+      //                 empty.push(i);
+
+      //             } else {
+      //                 empty.push(empty[i-2] + empty[i-1]);
+      //             }
+      //         }
+      //         console.log(`fibonacci(${user}) = ${empty[user]}`);
+      //     }
+    </script>
+
+
+
+
+    <script>
+      //////////  2. method:  with function
+      ///  for loop daki i ile buradaki i nin
+      ///    kullanimi farkli. burada hem counter hem de
+      /// array in index numarasini gösteren eleman olarak
+      //   kullandigimiz icin i den cikardigimiz sayilar farkli
+
+      function fibonacci() {
+        user = +prompt("Enter please a number");
+        empty = [];
+        i = 0;
+
+        if (user <= 0) {
+          return (user = +prompt("Enter please a number more Zero"));
+        } else if (user == 1) {
+          return console.log(`The Result of fibonacci(1) = 1 `);
+        } else if (user == 2) {
+          return console.log(`The Result of fibonacci(2) = 2 `);
+        } else {
+          while (true) {
+            if (i == 0) {
+              i++;
+            } else if (i == 1) {
+              empty.push(i);
+              i++;
+            } else if (i == 2) {
+              empty.push(i);
+              i++;
+            } else {
+              empty.push(empty[i - 3] + empty[i - 2]);
+              i++;
+              if (i > user) {
+                break;
+              }
+            }
+          }
+        }
+        return console.log(
+          `The Result of fibonacci(${user}) = ${empty[i - 2]}`
+        );
+      }
+
+      fibonacci();
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        // yedek
+      // let user = +prompt("Enter a number for fibonacci: ");
+      // // console.log(typeof(user), user);
+
+      // let empty = [];
+      // let counter = 0;
+      // while (counter <= user) {
+      //     if (user == 0 || user < 0) {
+      //         console.log("please enter a number more than Zero");
+      //         break;
+      //     }   else if (user == 1) {
+      //         console.log(`result = 1`);
+      //         break;
+      //     }   else if (user == 2 ) {
+      //         console.log(`result = 2`);
+      //     }   else {
+      //         for (i = 0; i <= user; i++) {
+      //             if (i == 1) {
+      //                 empty.push(i);
+      //                 counter +=1;
+      //             } else if (i == 2) {
+      //                 empty.push(i);
+      //                 counter += 1;
+      //             } else {
+      //                 empty.push(empty[i-2] + empty[i-1]);
+      //                 counter +=1;
+      //             }
+      //         }
+      //     }
+      // }
+
+      //     console.log(`fibonacci(${user}) = ${empty[user]}`);
+    </script>
+  </body>
+</html>
