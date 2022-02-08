@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+            /// 1. Method:
+
+        // function reverse_func() {
+        //     user = prompt("Enter Please a string to reverse!");
+        //     let reversed = user.split("").reverse().join("") ;
+        //     console.log(reversed);
+            
+        // }
+
+        // reverse_func();
+
+    </script>
+
+
+
+
+
+
+    <script>
+
+            /// 2. Method (arrow func) :
+
+            // let reversed = (user = prompt("Enter a string")) => console.log(user.split("").reverse().join(""));
+
+            // reversed();
+    </script>
+
+
+
+
+
+    <script>
+            /// 3. Method:
+            /// with for loop:
+
+        // function reversed() {
+        //     let user = prompt("Enter a string to reverse");
+        //     let reversed_string = "";
+            
+        //     for (i = user.length-1; i >= 0; i--) {
+        //         reversed_string += user[i];
+        //     }
+        //     return reversed_string;
+        // }
+
+        // console.log(reversed());
+        
+    </script>
+
+
+
+
+
+
+    <script>
+                /// 4. Method recursive:
+                
+        function reverseString(str) {
+            if (str === "")
+                return "";
+            else
+                return reverseString(str.substr(1)) + str.charAt(0);
+            }
+        console.log(reverseString("hello"));
+
+    </script>
+
+
+
+    <script>
+                // pad
+
+        let text = "5";
+        let paddedStart = text.padStart(4,0);
+
+        console.log(paddedStart);
+
+        // output 0005
+        
+
+
+        let paddedEnd = text.padEnd(4,0);
+        console.log(paddedEnd);
+    </script>
+    
+</body>
+</html>
