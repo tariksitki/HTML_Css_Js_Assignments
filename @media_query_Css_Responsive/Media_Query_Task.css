@@ -1,0 +1,188 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+
+}
+
+body {
+    
+}
+
+.navbar {
+    background-color: bisque;
+    width: 100vw;
+    height: 7vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.a-div {
+    margin-right: 1.5rem;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.box {
+    background-color: rgb(176, 98, 248);
+    height: 20vw;
+
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17vw;
+    border: 0.3rem solid black;
+    outline: 0.3rem solid blueviolet;
+    outline-offset: 1rem;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .navbar {
+        background-color: rgb(160, 87, 230);
+        color: bisque;
+        width: 100vw;
+        height: 7vw;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    
+    }
+    .box {
+        background-color: bisque;
+        height: 20vw;
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 17vw;
+        border: 0.3rem solid black;
+        outline: 0.3rem solid blueviolet;
+        outline-offset: 1rem;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+
+    a {
+        text-decoration: none;
+        background-color: bisque;
+        color: blueviolet;
+        font-size: 18px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        background-color: rgb(248, 194, 155);
+
+    }
+
+    .navbar {
+        background-color: rgb(252, 141, 62);
+        color: black;
+        width: 100vw;
+        height: 7vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 0.2rem solid black;
+
+    }
+
+    a {
+        text-decoration: none;
+        background-color: bisque;
+        color: black;
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .a-div {
+        margin-right: 0px;
+        
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        background-color: rgb(109, 109, 253);
+        color: black;
+        width: 100vw;
+        height: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 0.2rem solid white;
+
+    }
+
+    .a-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    a {
+        text-decoration: none;
+        background-color: bisque;
+        color: black;
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+    }
+
+    .box {
+        margin-top: 40vw;
+        background-color: rgb(185, 185, 253);
+        
+    }
+
+    /* Css ile p nin icerigini degistirmek icin 
+    p display none, daha sonra ise p nin icinde 
+    bulundugu div e ahter veriyoruz */
+
+    p {
+        display: none;
+
+    }
+
+    .box:after {
+        content: "Did you realize, you made a magic";
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+
+    }
+}
